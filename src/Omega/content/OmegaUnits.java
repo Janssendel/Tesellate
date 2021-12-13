@@ -65,3 +65,24 @@ public void load(){
         }};
     }};
 }};
+        OmegaIds = EntityMapping.register("dextral-shard", OmegaUnitEntity::new);
+        tesseract = new OmegaUnitType("dextral-shard"){{
+
+        range = 300;
+        flying = true;
+        hitSize = 17.5;
+        rotateSpeed = 2;
+        lowAltittude = true;
+        health = 24000;
+        armor = 20;
+        speed = 1.5;
+        drag = 0.005;
+        engineSize = 0;
+        ammoType = new ItemAmmoType(Items.phaseFabric);
+
+        constructor = OmegaUnitEntity::create;
+
+        abilities.add(new SeperateAbility(facet, 21, 0), abilities.add(new SeperateAbility(flare, 21, 0), abilities.add(new SeperateAbility(flare, 21, 0),
+        }};
+        }};
+        }};
