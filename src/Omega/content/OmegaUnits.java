@@ -16,13 +16,14 @@ import static mindustry.world.meta.Stat.abilities;
 
 public class OmegaUnits implements ContentList{
     //Steal from BetaMindy
-    private static Entry<Class<? extends Entityc>, Prov<? extends Entityc>>[] types = new Entry[]{
             prov(OmegaUnitEntity.class, OmegaUnitEntity::new),};
 
+@Override
+public void load(){
     public static OmegaUnitType
         tesseract, facet, dextral_shard, sinitral_shard, aspect;
 
-        EntityMapping.nameMap.put("tesseract", OmegaUnitEntity::new);
+        OmegaIds = EntityMapping.register("tesseract", OmegaUnitEntity::new);
         tesseract = new OmegaUnitType("tesseract"){{
 
             range = 300;
@@ -37,10 +38,30 @@ public class OmegaUnits implements ContentList{
             engineSize = 0;
             ammoType = new ItemAmmoType(Items.phaseFabric);
 
-            constructor = OmegaUnitEntity::new;
+            constructor = OmegaUnitEntity::create;
 
-            abilities.add(new SeperateAbility(flare, 21, 0)
+            abilities.add(new SeperateAbility(facet, 21, 0), abilities.add(new SeperateAbility(flare, 21, 0), abilities.add(new SeperateAbility(flare, 21, 0),
         }};
     }};
 }};
-        Ene
+        OmegaIds = EntityMapping.register("facet", OmegaUnitEntity::new);
+        tesseract = new OmegaUnitType("facet"){{
+
+            range = 300;
+            flying = true;
+            hitSize = 17.5;
+            rotateSpeed = 2;
+            lowAltittude = true;
+            health = 24000;
+            armor = 20;
+            speed = 1.5;
+            drag = 0.005;
+            engineSize = 0;
+            ammoType = new ItemAmmoType(Items.phaseFabric);
+
+            constructor = OmegaUnitEntity::create;
+
+            abilities.add(new SeperateAbility(facet, 21, 0), abilities.add(new SeperateAbility(flare, 21, 0), abilities.add(new SeperateAbility(flare, 21, 0),
+        }};
+    }};
+}};
