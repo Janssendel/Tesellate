@@ -23,7 +23,7 @@ public class Tesellate extends Mod{
                 dialog.cont.add("behold").row();
 
                 dialog.cont.image(Core.atlas.find("yourmodname-frog")).pad(20f).row();
-                dialog.cont.button("AAAAAAAAAAAAAAAAAA", dialog::hide).size(100f, 50f);
+                dialog.cont.button("i see frog", dialog::hide).size(100f, 50f);
                 dialog.show();
             });
         });
