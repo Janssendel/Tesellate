@@ -15,7 +15,6 @@ import static mindustry.content.UnitTypes.flare;
 import static mindustry.world.meta.Stat.abilities;
 
 public class OmegaUnits implements ContentList{
-    //Steal from BetaMindy
             prov(OmegaUnitEntity.class, OmegaUnitEntity::new),};
 
 @Override
